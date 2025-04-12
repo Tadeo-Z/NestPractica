@@ -13,7 +13,7 @@ export class Task extends Document {
   @Prop({ required: false })
   completed: boolean;
 
-  @Prop({ type: Types.ObjectId, ref: User.name })
+  @Prop({ type: Types.ObjectId, ref: 'User' })
   user: User;
 }
 
